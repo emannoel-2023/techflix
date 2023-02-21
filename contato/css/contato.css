@@ -1,0 +1,174 @@
+body {
+    margin: 10px;
+}
+li > a, p {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid white;
+    background-color: rgb(30, 30, 30);
+}
+.section-1 > p, .um {
+    margin: 0 2em 2em 4em;
+    color: white;
+}
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-image {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+h2 {
+    font-size: 3em;
+    margin: 2em;
+    color: white;
+    background-image: linear-gradient(45deg, white, #D3168C, white);
+    /* Deixando o fundo do texto transparente, para aparecer apenas o texto. E aplicando a animation que dá a impresão de movimentação do background. */
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: bg-tr 5s ease-in-out infinite;
+}
+#davi, #gabi, #luana, #luth, #pedro {
+    height: 170px;
+    width: 170px;
+    border-radius: 300px;
+    border: 3px groove #D3168C;
+    margin: 1em;
+}
+.container .section-2 {
+    margin: 0;
+}
+.section-2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+/* Cada class de div representa um card de perfil TechNerd */
+.div1, .div2, .div3, .div4, .div5 {
+    border: 5px inset black;
+    padding: 0;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg,black, white, black );
+    background-size: 300% 300%;
+    animation: bg-tr 5s ease-in-out infinite;
+    height: 100%;
+}
+/* Cada Span contém a foto ou a parte escrita dos cards ou engloba o form de contato. */
+span {
+    border: 1px solid white;
+    margin: 1em;
+    width: fit-content;
+    height: 50%;
+    padding: 0.5em 0.5em;
+}
+.span1 { 
+    width: 100%;
+    height: 100%;
+}
+.span1 > p {
+    margin: 1.35em;
+}
+p > strong {
+    font-weight: bold;
+}
+/* section contém a form de contato. */
+.section-3 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-3 > span {
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: white;
+}
+.section-3 > span > p {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em;
+}
+.form-control {
+    height: 100px;
+    margin: 1em 1em 1em 1em;
+}
+.section-3 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.section-3 > p {
+    color: white;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.377);
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+  /* Animation implementado do título da página e nos cards */
+@keyframes bg-tr {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@media
+/* Estilização mobile */
+    (max-width: 480px) { 
+        body {
+            margin: 0;
+        }
+        .section-1 {
+            flex-direction: column-reverse;
+        }
+        h2 {
+            text-align: center;
+        }
+        .um {
+            text-align: center;
+        }
+        .div1, .div2, .div3, .div4, .div5 {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .span1 {
+            margin: 0;
+            padding: 0;
+        }
+        .section-3 > span {
+            flex-direction: column;
+        }
+
+    }

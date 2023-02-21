@@ -1,0 +1,177 @@
+
+@font-face {
+  font-family: "Noto";
+  src: url(NotoSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: "Bison";
+  src: url(Bison-Bold\(PersonalUse\).ttf);
+}
+
+* {box-sizing: border-box}
+
+body{
+    background-color: #0e121a;
+}
+
+.container {
+  padding: 16px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.377);
+  width: 60%;
+  margin:auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.subtitulo{
+  padding-bottom:20px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number]  {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #9b9393;
+  transition:1.5s;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus{
+  background-color: rgba(221, 221, 221, 0.678);
+  outline: none;
+}
+
+input:hover {
+    background-color: #837b7b ;
+    box-shadow: 2px 2px 2px 1px #ce19c5d8;
+}
+
+::placeholder{
+  color: rgb(34, 29, 29);
+}
+
+
+hr {
+  border: 1px solid #0e999e8a;
+  margin-bottom: 25px;
+  width: 60%;
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:auto
+
+}
+
+#titulo {
+   width: 30%;
+   padding: 20px 0 18px 0;
+}   
+
+
+.subtitulo {
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.adress2 {
+  display:inline-flex;
+  justify-content: center;
+  gap: 15px
+
+}
+
+.adress1 {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+#cidade{
+  width:28%;
+}
+
+#uf{
+width: 10%;
+}
+
+#bairro{
+  width:30%;
+}
+
+p {
+  color: rgb(233, 230, 225);
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+
+.cadastrobtn {
+  color: rgba(231, 227, 221, 0.753);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border:none;
+  box-shadow: 2px 1px 1px rgba(78, 77, 75, 0.507);
+  background-color: rgba(0, 0, 0, 0.603);
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  font-size: 20px;
+  font-family: "Bison";
+}
+
+.cadastrobtn:hover {
+  opacity:1;
+  box-shadow: 5px 3px 3px #ce19c5d8;
+  transition: 1.3s
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+   text-align: center;
+   padding-top: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #212529;
+  color: aliceblue;
+  position: relative;
+  bottom: 0;
+  margin-top: 30px;
+  padding: 20px 10px;
+}
+
+@media (max-width: 700px) {
+.adress2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.bg-dark{
+  background-color: rgb(33, 37, 41,1)!important ;
+  }
+
+  li > a {
+    font-family: 'Roboto', sans-serif !important;
+  }

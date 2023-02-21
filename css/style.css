@@ -1,0 +1,145 @@
+*{
+    
+    font-family: 'Roboto', sans-serif!important;
+}
+
+body{
+    background: #0e121a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main{
+    height:  90vh;
+}
+
+p{
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: -13px;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#carousel-item1{
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.caixa{
+    position: absolute!important;
+    z-index: +1!important;
+    justify-content: flex-start!important;
+    background: rgba(255, 255, 255, 0)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 140px;
+}
+#carouselExampleFade{
+    position: relative!important;
+    z-index: -1!important;
+}
+.carousel-inner{
+    z-index:-1 !important;
+    position: absolute!important;
+    right: 0!important;
+    top: 0!important;
+    width: 80%!important; 
+    z-index: -1!important;
+}
+.logo{
+    background-color: rgba(255, 255, 255, 0)!important;
+    margin-bottom: -70px;
+}
+.bio{
+    background-color: rgba(255, 255, 255, 0)!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.botao{
+    background-color:rgba(255, 255, 255, 0)!important;
+}
+.logo-grande{
+    background-color:rgba(255, 255, 255, 0)!important;
+}
+.bio2{
+    background-color: rgba(255, 255, 255, 0)!important;
+    text-align: center;
+}
+.bio2-frase{
+    font-weight: medium!important;
+    font-size: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+#btn1{
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+}
+#btn2{
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+}
+@media (max-width: 900px){
+    #carouselExampleFade{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .caixa{
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+}
+
+.modal-header, .modal-title, .modal-body,.form-group,.modal-footer,.form-text,label{
+    background: white;
+    color: #0e121a;
+}
+
+
+.btn-light{
+    background: gray;
+}
+
+.btn-light:hover{
+    background: rgb(197, 194, 194);
+}
+
+
+.botao{
+    padding-top: 10px;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    --bs-bg-opacity: 1;
+    background-color:  rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    position: relative;
+    padding: 20px 10px;
+    color: aliceblue;
+}

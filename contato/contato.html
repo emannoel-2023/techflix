@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link da framework 'Bootstrap' para algumas estilizações da página -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <!-- Fonte Roboto, da google fontes, utilizada no layout da página.  -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="./js/contato.js" defer></script>
+  <title>Contato</title>
+</head>
+
+<body>
+  <!-- Barra de header padrão advinda 100% do bootstrap -->
+  <header class="d-flex justify-content-center w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="css/images/TECHFLIX.png" alt="TechFlix" width="113" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarText">
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../Branch-davi/html.JS.CSS/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pesquisa/pesquisa.html">Pesquisar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main (container) contendo as sections, centralizadas na página.  -->
+  <main class="d-flex justify-content-center ">
+    <!-- Section-1: contem o as fotos do time 'TechNerds'. Ao clicar na foto de um dos integrantes, a página rola direto para o card de perfil do mesmo. -->
+    <section class="section-1">
+      <div>
+        <h2>Conheça os nossos TechNerd's</h2>
+      </div>
+      <div class="container box-image">
+        <div class="row">
+          <div class="d-flex justify-content-center flex-wrap">
+            <img class="col-12" id="davi" src="./css/images/davizito.jpeg" alt="foto do TechNerd Davi">
+            <img class="col-12" id="gabi" src="./css/images/gabi.jfif" alt="foto da TechNerd Gabi">
+            <img class="col-12" id="luana" src="./css/images/luana.jfif" alt="foto da TechNerd Luana">
+            <img class="col-12" id="luth" src="./css/images/luth.jpeg" alt="foto do TechNerd Luth">
+            <img class="col-12" id="pedro" src="./css/images/pedro.jfif" alt="foto do TechNerd Pedro">
+            <p class="um">(clique na foto para ver o perfil do TechNerd)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container section-2">
+      <!-- Section-2: Card's com os perfis da TechNerds -->
+      <div class="row section-2">
+        <div class="div1">
+          <span ><img id='davi' src="./css/images/davizito.jpeg" alt="foto do integrante Davi"></span>
+          <span class="span1">
+            <p><strong>Nome: </strong> Davi Emmanoel</p>
+            <p><strong>Idade :</strong> 25 anos</p>
+            <p><strong>Dev: : </strong> Front-end</p>
+            <p><strong>Signo: </strong> peixes</p>
+            <p><strong>Curiosidade: </strong>Adora ficar sozinho com os próprios pensamentos!</p>
+            <p><strong>Contato: </strong> <a href="https://www.linkedin.com/in/davi-emannoel-71bb33bb/">Linkedin Profile</a> / <a href="https://github.com/davi33-emanoel">Github Profile</a>
+            </p>
+          </span>
+        </div>
+
+        <div class="div2">
+          <span><img id='gabi' src="css/images/gabi.jfif" alt="foto da integrante gabi"></span>
+          <span class="span1">
+            <p><strong>Nome:</strong> Gabrielle Freire</p>
+            <p><strong>Idade:</strong>31 anos</p>
+            <p><strong>Dev: </strong> Front-end</p>
+            <p><strong>Signo:</strong>Leão ♌</p>
+            <p><strong>Curiosidade:</strong>"Já trabalhou com produção de moda e hoje segue na transição para carreira tech. PS: rara caiorica que não gosta de açaí". </p>
+            <p><strong>Contato:</strong> <a href="https://www.linkedin.com/in/gabrielle-freire-2802199b">Linkedin Profile</a> /             <a href="https://github.com/Gabboss13">Github Profile</a> 
+            </p>
+          </span>
+        </div>
+        <div class="div3">
+          <span><img id='luana' src="css/images/luana.jfif" alt="foto da integrante Luana"></span>
+          <span class="span1">
+            <p><strong>Nome:</strong> Luana Reis</p>
+            <p><strong>Idade:</strong> 26 anos </p>
+            <p><strong>Dev: </strong> Front-end</p>
+            <p><strong>Signo:</strong> Áries ♈</p>
+            <p><strong>Curiosidade:</strong> "Publicitária em transição de carreira. PS: outra rara carioca que não gosta de assaí".</p>
+            <p><strong>Contato:</strong> <a href="https://www.linkedin.com/in/reisluanag/">Linkedin Profile</a> / <a href="https://github.com/reisluana">Github Profile</a></p>
+           
+          </span>
+        </div>
+        <div class="div4">
+          <span><img id='luth' src="css/images/luth.jpeg" alt="foto do integrante luth"></span>
+          <span class="span1">
+            <p><strong>Nome:</strong> Luciano 'Luth' Mendes</p>
+            <p><strong>Idade:</strong> 24 anos</p>
+            <p><strong>Dev: </strong> Front-end</p>
+            <p><strong>Signo:</strong> Touro ♉</p>
+            <p><strong>Curiosidade:</strong> Apesar de extrovertido, adora ficar sozinho. "Solitude é você olhar em
+              volta,
+              estar sozinho e pensar que tudo está como deveria estar. É sentir falta de si e autocomtemplar-se com a
+              sua
+              própria cia". ~Luth</p>
+            <p><strong>Contato:</strong> <a href="https://www.linkedin.com/in/luciano-mendes-b32a38204">Linkedin Profile</a> / <a href="https://github.com/LuthGom">Github Profile</a></p>
+          </span>
+        </div>
+        <div class="div5">
+          <span><img id='pedro' src="css/images/pedro.jfif" alt="foto do integrante Pedro"></span>
+          <span class="span1">
+            <p><strong>Nome:</strong> Pedro Junior</p>
+            <p><strong>Idade:</strong> 34 anos</p>
+            <p><strong>Dev: </strong> Front-end</p>
+            <p><strong>Signo:</strong> Câncer ♋</p>
+            <p><strong>Curiosidade:</strong> "Descobriu calvice recentemente, mas não se deixou abalar".</p>
+            <p><strong>Contato:</strong> <a href="https://www.linkedin.com/in/pedro-junior-silva/">Linkedin Profile</a> / <a href="https://github.com/Pedro-jds">Github Profile</a></p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <!-- Section-3: pequeno form para entrar em contato com a empresa!-->
+      <span>
+        <p><strong>Fale conosco</strong></p>
+        <input class="form-control form-control-lg" type="text" placeholder="seu melhor email"
+          aria-label=".form-control-lg example">
+        <input class="form-control" type="text" placeholder="Digite aqui!" aria-label="default input example">
+        <button class="btn btn-dark" type="button">Enviar</button>
+      </span>
+    
+    </section>
+  </main>
+  <footer>
+    <small>&copy; Copyright 2021, Página desenvolvida para fins acadêmicos</small> 
+  </footer>
+
+</body>
+
+</html>
